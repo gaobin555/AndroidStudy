@@ -29,6 +29,7 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.lang.annotation.Documented;
 import java.lang.annotation.Target;
@@ -117,7 +118,24 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         // 将拍摄的照片显示出来
                         Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(imageUri));
-                        picture.setImageBitmap(bitmap);
+                        Bitmap bitmapWithWatermark = BitmapUtil.AddTimeWatermark(bitmap);
+                        FileOutputStream b = null;
+                        try {
+                            b = new FileOutputStream(getExternalCacheDir()+ "outputImage.jpg");
+                            bitmapWithWatermark.compress(Bitmap.CompressFormat.JPEG, 100, b);// 把图片数据写入指定的文件
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                        } finally {
+                            try {
+                                if (b != null) {
+                                    b.flush();   //刷新输出流
+                                    b.close();   //关闭输出流
+                                }
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                        picture.setImageBitmap(bitmapWithWatermark);
                     } catch (FileNotFoundException e) {
                         Log.e("MainActivity", "FileNotFoundException");
                         e.printStackTrace();
