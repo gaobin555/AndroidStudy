@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/margin_large"
+              android:background="@drawable/shape_black_rect_bg"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_male"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_dot_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/w10"
+            android:background="@drawable/dot"/>
+
+        <TextView
+            android:id="@+id/dialog_edit_sex_male"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/user_sex_male"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/font_18"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:id="@+id/ll_female"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_dot_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/w10"
+            android:background="@drawable/dot"/>
+
+        <TextView
+            android:id="@+id/dialog_edit_sex_female"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/user_sex_female"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/font_18"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2014 YotaDevices, LLC - All Rights Reserved.
+
+    Confidential and Proprietary.
+    Unauthorized copying of this file, via any medium is strictly prohibited.
+-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_menu_p2b" android:state_pressed="false"/> <!-- pressed -->
+    <item android:drawable="@drawable/ic_menu_p2b_active" android:state_pressed="true"/> <!-- focused -->
+
+</selector>

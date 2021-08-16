@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@null"
+        android:src="@drawable/icon_desk_manager_guide" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="141dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/hint"
+        android:lineSpacingExtra="@dimen/padding_small"
+        android:padding="@dimen/padding_large"
+        android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_16" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/dialog_desk_manager_finish_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/icon_desk_manager_guide_finish" />
+
+    </FrameLayout>
+
+</LinearLayout>

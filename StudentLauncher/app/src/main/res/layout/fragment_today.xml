@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:clickable="true">
+
+    <ImageView
+        android:id="@+id/iv_bg_today"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_weather"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/min_depart_time_clock_view"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="@dimen/margin_12"
+            android:layout_marginTop="@dimen/margin_10"
+            android:src="@drawable/ic_unknown"/>
+
+        <TextView
+            android:id="@+id/tv_tem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_weather"
+            android:fontFamily="Roboto-Light"
+            android:text="@string/n"
+            android:textColor="@color/black"
+            android:textSize="50sp"/>
+
+        <View
+            android:id="@+id/tv_line"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/height_90"
+            android:layout_toEndOf="@id/tv_tem"
+            android:layout_marginStart="10dp"
+            android:background="@color/text_unselected_color"/>
+
+        <TextView
+            android:id="@+id/tv_location_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_line"
+            android:layout_marginStart="10dp"
+            android:fontFamily="NotoSansHanunoo-Regular"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:text="@string/unknown"
+            android:textColor="@color/black"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/tv_weather_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_location_city"
+            android:layout_marginStart="10dp"
+            android:fontFamily="NotoSansHanunoo-Regular"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="26sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_location_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_line"
+            android:layout_below="@id/tv_location_city"
+            android:layout_marginStart="10dp"
+            android:fontFamily="NotoSansHanunoo-Regular"
+            android:text="@string/n_n"
+            android:textColor="@color/black"
+            android:textSize="26sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_weather"
+        android:layout_marginTop="@dimen/padding_6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_30"
+            android:layout_marginTop="@dimen/padding_6"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_30"
+            android:paddingRight="@dimen/padding_30">
+
+            <TextView
+                android:id="@+id/fragment_message"
+                style="@style/KindleBottomTv"
+                android:drawableTop="@drawable/icon_message"
+                android:text="@string/message" />
+
+            <TextView
+                android:id="@+id/fragment_phone"
+                style="@style/KindleBottomTv"
+                android:drawableTop="@drawable/icon_contacts"
+                android:text="@string/phone" />
+
+            <TextView
+                android:id="@+id/fragment_email"
+                style="@style/KindleBottomTv"
+                android:drawableTop="@drawable/icon_browser"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/fragment_notice"
+                style="@style/KindleBottomTv"
+                android:drawableTop="@drawable/ic_notification"
+                android:text="@string/notice"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/fragment_alert_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:textColor="@color/black"
+                android:text="@string/alert_message_report_loss"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.android.xthink.ink.launcherink.common.view.TimeView
+        android:id="@+id/min_depart_time_clock_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="@dimen/main_page_title_width"-->
+        <!--android:layout_height="@dimen/main_page_title_height"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/today_title"/>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/fragment_notice_num_icon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/rl_weather"-->
+        <!--android:layout_marginTop="@dimen/padding_9"-->
+        <!--android:layout_marginRight="@dimen/today_notice_num_icon_pad"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/edit_checkbox_off"/>-->
+
+
+    <TextView
+        android:id="@+id/fragment_notice_num"
+        android:layout_below="@+id/rl_weather"
+        android:layout_marginTop="@dimen/padding_15"
+        android:layout_marginEnd="@dimen/today_notice_num_pad"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/shape_circle_black_bg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_14"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/fragment_email_num"
+        android:layout_below="@+id/rl_weather"
+        android:layout_marginTop="@dimen/padding_15"
+        android:layout_marginEnd="@dimen/today_email_num_pad"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/shape_circle_black_bg"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_14"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/fragment_message_num"
+        android:layout_below="@+id/rl_weather"
+        android:layout_marginTop="@dimen/padding_15"
+        android:layout_marginStart="@dimen/today_message_num_pad"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/shape_circle_black_bg"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_14"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/fragment_dailer_num"
+        android:layout_below="@+id/rl_weather"
+        android:layout_marginTop="@dimen/padding_15"
+        android:layout_marginStart="@dimen/today_dailer_num_pad"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/shape_circle_black_bg"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_14"
+        android:visibility="gone"/>
+
+</RelativeLayout>

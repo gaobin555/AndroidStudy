@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/page_manager_picture_height"
+                android:background="@drawable/edit_view_pager_background_unselected"
+                android:padding="1dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_edit_item_pic"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_manager_picture_height"
+        android:layout_above="@+id/tv_edit_set_home"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/iv_edit_item_choose"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:drawableRight="@drawable/edit_checkbox_on"
+        android:paddingBottom="15dp"
+        android:paddingEnd="11dp"/>
+
+    <TextView
+        android:id="@+id/tv_edit_set_home"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/page_manager_homepage_text_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/home_screen_icon"
+        android:gravity="center"
+        android:text="@string/set_home_screen"
+        android:textSize="@dimen/page_manager_homepage_textsize"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="disabled_gray">#FF999999</color>
+    <color name="orange">#FFE46715</color>
+    <color name="seekbar_color">#FF9FDC00</color>
+    <color name="error_clock">#FFE40000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_tran">#cc000000</color>
+    <color name="black">#000000</color>
+
+    <color name="white_trans10">#1affffff</color>
+    <color name="black_trans10">#1a000000</color>
+    <color name="white_trans20">#33ffffff</color>
+    <color name="black_trans20">#33000000</color>
+    <color name="white_trans30">#4dffffff</color>
+    <color name="black_trans30">#4d000000</color>
+    <color name="white_trans90">#000000</color>
+    <color name="black_trans90">#ffffff</color>
+<!--    <color name="white_trans90">#ee000000</color>-->
+    <color name="white_trans50">#80ffffff</color>
+    <color name="black_trans50">#80000000</color>
+    <color name="white_98">#FF989898</color>
+    <color name="white_68">#FF686868</color>
+    <color name="white_28">#FF282828</color>
+    <color name="white_58">#FF585858</color>
+    <color name="white_B8">#FFB8B8B8</color>
+    <color name="setting_view_title">#000000</color>
+    <color name="setting_view_des">#686868</color>
+
+</resources>

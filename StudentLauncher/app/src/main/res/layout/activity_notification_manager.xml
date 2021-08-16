@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_notification_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/statusbar_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/font_18"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/bt_back"
+        android:layout_below="@id/statusbar_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_activity_title_height"
+        android:paddingEnd="@dimen/padding_large"
+        android:paddingStart="@dimen/padding_large"
+        android:src="@drawable/edit_back" />
+
+    <TextView
+        android:layout_below="@id/statusbar_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_activity_title_height"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/notification_manager"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/bt_delete"
+        android:layout_below="@id/statusbar_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_activity_title_height"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:paddingEnd="@dimen/padding_large"
+        android:paddingStart="@dimen/padding_large"
+        android:src="@drawable/delete" />
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/bt_back"
+        android:background="#686868" />
+
+    <ListView
+        android:id="@+id/nt_notification_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_line" />
+
+    <TextView
+        android:id="@+id/nt_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_line"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/empty_notic"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="flights_app_short_hrs_cbd">hrs</string>
+
+    <string name="user_null">Не установлено</string>
+    <string name="user_sex_male">Мужской</string>
+    <string name="user_sex_female">Женский</string>
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="immediately_open">Открыть сейчас</string>
+    <string name="due_soon">Необходимо продлить подписку</string>
+    <string name="calendar_am">AM</string>
+    <string name="calendar_pm">PM</string>
+    <!--new-->
+    <string name="dead_line">
+        <xliff:g id="YEAR">%1$d</xliff:g>-<xliff:g id="MONTH">%2$d</xliff:g>-<xliff:g id="DAY">%3$d</xliff:g> Крайний срок：
+    </string>
+</resources>

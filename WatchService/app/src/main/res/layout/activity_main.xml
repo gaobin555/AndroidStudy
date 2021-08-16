@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button android:id="@+id/request_weather_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请求天气"/>
+    <Button android:id="@+id/request_bpGL_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/request_weather_btn"
+            android:text="聊天列表"/>
+
+    <ListView
+        android:id="@+id/bpGL_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/request_bpGL_btn"
+        android:layout_below="@id/request_bpGL_btn">
+
+    </ListView>
+
+    <LinearLayout android:id="@+id/socketStateLl"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerHorizontal="true"
+                  android:gravity="left"
+                  android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/socketState_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/socketState_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="socket连接状态"/>
+
+        <Button android:id="@+id/socket_reconnect_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新连接"/>
+        <Button android:id="@+id/socket_close_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="断开连接"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/socketStateLl"
+        android:layout_below="@id/socketStateLl"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/XinTiao_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="心跳包"/>
+
+        <TextView
+            android:id="@+id/DengLu_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="登录包"
+        />
+
+        <TextView
+            android:id="@+id/Location_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="定位数据包"
+        />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:orientation="vertical">
+
+        <Button android:id="@+id/upload_voice_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传语音"/>
+        <Button android:id="@+id/upload_pic_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传图片"/>
+        <Button android:id="@+id/voice_list_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="语音列表"/>
+        <Button android:id="@+id/add_friend_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="碰碰交友"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

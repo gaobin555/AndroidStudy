@@ -1,0 +1,16 @@
+android {
+
+    // Specifies a flavor dimension.
+    flavorDimensions "k1"
+
+    productFlavors {
+
+        def defaultApplicationId = "com.android.xx.launcherink"
+
+        StudentLauncher {
+            manifestPlaceholders = ["AUTHORITY": defaultApplicationId]
+            dimension "k1"
+        }
+    }
+
+}

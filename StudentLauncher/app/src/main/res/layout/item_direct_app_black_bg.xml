@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/direct_item_length"
+    android:layout_height="@dimen/direct_item_length"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/height_66"
+        android:layout_height="@dimen/height_56">
+
+        <com.android.xthink.ink.launcherink.common.view.MyImageView
+            android:id="@+id/item_direct_app_icon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:contentDescription="@null"
+            tools:src="@drawable/icon_about_mozhi"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/item_direct_app_new_iv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right"-->
+            <!--android:contentDescription="@null"-->
+            <!--android:src="@drawable/icon_new"/>-->
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/item_direct_app_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:textColor="@color/white"
+        tools:text="微博"/>
+
+</LinearLayout>

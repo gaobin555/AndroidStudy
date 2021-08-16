@@ -1,0 +1,196 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="font_11">11sp</dimen>
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_13">13sp</dimen>
+    <dimen name="font_14">14sp</dimen>
+    <dimen name="font_15">15sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_16_regular">16dp</dimen>
+    <dimen name="font_17">17sp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="font_19">19sp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="font_22">22sp</dimen>
+    <dimen name="padding_x_small">5dp</dimen>
+    <dimen name="padding_small">9dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_x_large">28dp</dimen>
+
+    <dimen name="height_54">54dp</dimen>
+    <dimen name="height_56">56dp</dimen>
+    <dimen name="height_66">66dp</dimen>
+    <dimen name="height_90">90dp</dimen>
+    <dimen name="height_95">95dp</dimen>
+
+    <dimen name="margin_x_small">8dp</dimen>
+    <dimen name="margin_small">9dp</dimen>
+    <dimen name="margin">18dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">27dp</dimen>
+    <dimen name="margin_x_xlarge">41dp</dimen>
+
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_21">21dp</dimen>
+    <dimen name="margin_26">26dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_33">33dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="margin_56">56dp</dimen>
+    <dimen name="margin_57">57dp</dimen>
+    <dimen name="margin_58">58dp</dimen>
+    <dimen name="margin_65">65dp</dimen>
+    <dimen name="margin_82">82dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_96">96dp</dimen>
+
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_9">9dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_58">58dp</dimen>
+    <dimen name="occupation_margin">3dp</dimen>
+
+    <dimen name="item_height_middle">60dp</dimen>
+
+    <dimen name="bubble_1_width">221dp</dimen>
+    <dimen name="bubble_2_width">154dp</dimen>
+    <dimen name="bubble_1_time_size">44sp</dimen>
+    <dimen name="bubble_2_time_size">28sp</dimen>
+    <dimen name="bubble_3_time_size">24sp</dimen>
+    <dimen name="bubble_4_time_size">20sp</dimen>
+    <dimen name="bubble_5_time_size">18sp</dimen>
+    <dimen name="bubble_6_time_size">17sp</dimen>
+    <dimen name="bubble_7_time_size">16sp</dimen>
+    <dimen name="bubble_1_title_size">18sp</dimen>
+    <dimen name="bubble_2_title_size">16sp</dimen>
+    <dimen name="bubble_3_title_size">14sp</dimen>
+    <dimen name="bubble_4_title_size">12sp</dimen>
+    <dimen name="bubble_5_title_size">10sp</dimen>
+    <dimen name="bubble_6_title_size">10sp</dimen>
+    <dimen name="bubble_7_title_size">10sp</dimen>
+    <dimen name="bubble_1_time_margin_top">38dp</dimen>
+    <dimen name="bubble_1_time_height">53dp</dimen>
+    <dimen name="bubble_1_title_height">84dp</dimen>
+    <dimen name="bubble_1_title_width">180dp</dimen>
+    <dimen name="bubble_2_time_margin_top">25dp</dimen>
+    <dimen name="bubble_2_time_height">39dp</dimen>
+    <dimen name="bubble_2_title_height">66dp</dimen>
+    <dimen name="bubble_2_title_width">123dp</dimen>
+    <dimen name="bubble_3_time_margin_top">19dp</dimen>
+    <dimen name="bubble_3_time_height">29dp</dimen>
+    <dimen name="bubble_3_title_height">54dp</dimen>
+    <dimen name="bubble_3_title_width">103dp</dimen>
+    <dimen name="bubble_4_time_margin_top">16dp</dimen>
+    <dimen name="bubble_4_time_height">25dp</dimen>
+    <dimen name="bubble_4_title_height">32dp</dimen>
+    <dimen name="bubble_4_title_width">86dp</dimen>
+    <dimen name="bubble_5_time_margin_top">16dp</dimen>
+    <dimen name="bubble_5_time_height">22dp</dimen>
+    <dimen name="bubble_5_title_height">28dp</dimen>
+    <dimen name="bubble_5_title_width">74dp</dimen>
+    <dimen name="bubble_6_time_margin_top">13dp</dimen>
+    <dimen name="bubble_6_time_height">21dp</dimen>
+    <dimen name="bubble_6_title_height">28dp</dimen>
+    <dimen name="bubble_6_title_width">63dp</dimen>
+    <dimen name="bubble_7_time_margin_top">11dp</dimen>
+    <dimen name="bubble_7_time_height">20dp</dimen>
+    <dimen name="bubble_7_title_height">28dp</dimen>
+    <dimen name="bubble_7_title_width">63dp</dimen>
+
+    <dimen name="todo_yes">48dp</dimen>
+    <dimen name="edit_page_margin">22dp</dimen>
+    <dimen name="edit_pager_radius">3dp</dimen>
+    <!--homeIndicator-->
+    <dimen name="home_indicator_home_width">8dp</dimen>
+    <dimen name="home_indicator_circle_width">6dp</dimen>
+    <dimen name="home_indicator_margin_width">4dp</dimen>
+
+
+    <!--user-->
+    <dimen name="user_title_height">52dp</dimen>
+    <dimen name="common_user_buy_button_width">155dp</dimen>
+    <dimen name="common_user_buy_button_height">80dp</dimen>
+    <dimen name="buy_card_second_line">15dp</dimen>
+    <dimen name="pay_item_image_width">24dp</dimen>
+    <dimen name="pay_item_margin">10dp</dimen>
+    <dimen name="h52">52dp</dimen>
+    <dimen name="h20">20dp</dimen>
+    <dimen name="h1">1dp</dimen>
+    <dimen name="sp18">18sp</dimen>
+    <dimen name="w20">20dp</dimen>
+    <dimen name="h15">15dp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="h24">24dp</dimen>
+    <dimen name="h40">40dp</dimen>
+    <dimen name="h50">50dp</dimen>
+    <dimen name="w23">23dp</dimen>
+    <dimen name="pay_confirm_width">185dp</dimen>
+    <dimen name="pay_confirm_height">48dp</dimen>
+    <dimen name="height200">200dp</dimen>
+    <dimen name="height235">235dp</dimen>
+    <dimen name="page_manager_homepage_textsize">18sp</dimen>
+    <dimen name="page_manager_homepage_text_height">41dp</dimen>
+    <dimen name="h17">17dp</dimen>
+    <dimen name="h10">10dp</dimen>
+    <dimen name="w10">10dp</dimen>
+    <dimen name="w12">12dp</dimen>
+    <dimen name="main_page_title_width">100dp</dimen>
+    <dimen name="main_page_title_height">60dp</dimen>
+    <dimen name="edit_activity_title_height">59dp</dimen>
+    <dimen name="weather_icon_margin_left">16dp</dimen>
+    <dimen name="weather_detail_margin_top">6dp</dimen>
+    <dimen name="weather_city_margin_top">10dp</dimen>
+    <dimen name="tem_weather_margin_right">22dp</dimen>
+    <dimen name="weather_icon_width">48dp</dimen>
+    <dimen name="rl_today_width">72dp</dimen>
+    <dimen name="tem_text_size">38sp</dimen>
+    <dimen name="user_info_container_height">138dp</dimen>
+    <dimen name="user_icon_height">90dp</dimen>
+    <dimen name="user_icon_width">90dp</dimen>
+    <dimen name="user_icon_margin_top">30dp</dimen>
+    <dimen name="user_level_margin_top">4dp</dimen>
+    <dimen name="user_account_ads_bg_margin_top">294dp</dimen>
+    <dimen name="user_account_desk_manager_margin">30dp</dimen>
+    <dimen name="desk_manager_width">150dp</dimen>
+    <dimen name="desk_manager_height">134dp</dimen>
+    <dimen name="toast_padding">12dp</dimen>
+    <dimen name="user_setting_icon_top">35dp</dimen>
+    <dimen name="trs_text_size">12sp</dimen>
+
+    <dimen name="page_manager_indicator_margin_bottom">16dp</dimen>
+    <dimen name="page_manager_picture_height">400dp</dimen>
+    <dimen name="page_manager_height">481dp</dimen>
+
+    <dimen name="direct_item_length">90dp</dimen>
+
+
+    <dimen name="navigation_panel_height">80px</dimen>
+    <dimen name="popup_flip_padding_top">25.33dp</dimen>
+    <dimen name="popup_flip_padding_side">10.67dp</dimen>
+    <dimen name="discovery_icon_height">140dp</dimen>
+    <dimen name="discovery_setting_btn_left_margin">85dp</dimen>
+    <dimen name="discovery_setting_btn_bottom_margin">60dp</dimen>
+
+    <dimen name="today_notice_num_pad">45dp</dimen>
+    <dimen name="today_email_num_pad">119dp</dimen>
+    <dimen name="today_message_num_pad">89dp</dimen>
+    <dimen name="today_dailer_num_pad">191dp</dimen>
+
+    <dimen name="curriculum_line_height">44dp</dimen>
+
+</resources>

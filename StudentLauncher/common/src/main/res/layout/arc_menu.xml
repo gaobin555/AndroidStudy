@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/control_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white_trans90"
+             android:clickable="false"
+             android:focusable="false">
+
+    <ImageView
+        android:id="@+id/iv_arc_menu_bg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/menu_bg"/>
+
+    <com.android.xthink.ink.launcherink.common.view.ArcLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
+                                 android:id="@+id/item_layout"
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_gravity="bottom"
+                                 android:clickable="true"
+                                 custom:childSize="30px"
+                                 custom:fromDegrees="0.0"
+                                 custom:toDegrees="90.0"/>
+
+    <ImageView
+        android:id="@+id/iv_rotate_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/chagescreen_btn"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/gif_view_rorate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</FrameLayout>

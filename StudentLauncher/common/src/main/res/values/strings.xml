@@ -1,0 +1,19 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="flights_app_short_hrs_cbd">hrs</string>
+
+    <string name="user_null">Not set</string>
+    <string name="user_sex_male">Male</string>
+    <string name="user_sex_female">Female</string>
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="immediately_open">Opened immediately</string>
+    <string name="due_soon">Subscribe is expiring. Please renew.</string>
+    <string name="calendar_am">AM</string>
+    <string name="calendar_pm">PM</string>
+    <!--new-->
+    <string name="dead_line">
+        <xliff:g id="YEAR">%1$d</xliff:g>-<xliff:g id="MONTH">%2$d</xliff:g>-<xliff:g id="DAY">%3$d</xliff:g> Deadline
+    </string>
+</resources>

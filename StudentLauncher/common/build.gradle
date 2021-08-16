@@ -1,0 +1,74 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply from: './../yotaPhone.gradle'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    publishNonDefault true
+}
+
+
+def artifactId = 'common'
+def groupId = "com.baoliyota.lib"
+def version = '1.0.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.artifactId = artifactId
+            pom.groupId = groupId
+            pom.version = version
+            pom.project {
+                packaging 'aar'
+                description 'common for by'
+            }
+
+            def devRoot = System.getenv("BY_DEV_ROOT")
+            if (devRoot == null || "".equals(devRoot)) {
+                devRoot = file("./../../..").toString()
+            }
+            repository(url: "file://${devRoot}/android/distribute/libs")
+            snapshotRepository(url: "file://${devRoot}/android/distribute/libs")
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    api 'com.android.support:support-v4:19.1.0'
+    api 'com.android.support:appcompat-v7:23.4.0'
+    testImplementation 'junit:junit:4.12'
+    api 'com.intellij:annotations:12.0@jar'
+    api 'com.squareup.okhttp3:okhttp:3.5.0'
+    api 'com.google.code.gson:gson:2.8.0'
+}
+

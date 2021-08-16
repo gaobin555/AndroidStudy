@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2014 YotaDevices, LLC - All Rights Reserved.
+
+    Confidential and Proprietary.
+    Unauthorized copying of this file, via any medium is strictly prohibited.
+-->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line">
+
+    <stroke
+        android:height="3dp"
+        android:dashWidth="2dp"
+        android:color="@android:color/black"
+        android:dashGap="6dp" />
+
+</shape>

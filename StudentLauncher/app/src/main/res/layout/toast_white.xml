@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_toast">
+
+    <TextView
+        android:id="@+id/toast_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/h10"
+        android:paddingLeft="@dimen/toast_padding"
+        android:paddingRight="@dimen/toast_padding"
+        android:paddingTop="@dimen/h10"
+        android:text="@string/about_mobest"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_16_regular"/>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="empty_view" type="id"/>
+    <item name="error_view" type="id"/>
+    <item name="loading_view" type="id"/>
+    <item name="content_view" type="id"/>
+    <item name="no_network_view" type="id"/>
+
+    <item name="empty_retry_view" type="id"/>
+    <item name="error_retry_view" type="id"/>
+    <item name="no_network_retry_view" type="id"/>
+    <item name="tv_update_up_version" type="id"/>
+    <item name="iv_back" type="id"/>
+
+
+  <item type="id" name="background_image" />
+  <item type="id" name="bottom_line" />
+  <item type="id" name="button_action" />
+  <item type="id" name="button_cancel" />
+  <item type="id" name="button_ok" />
+  <item type="id" name="content" />
+  <item type="id" name="dot_line" />
+  <item type="id" name="fake_bottom" />
+  <item type="id" name="flip_popup_description" />
+  <item type="id" name="flip_popup_image" />
+  <item type="id" name="flip_popup_title" />
+  <item type="id" name="footer" />
+  <item type="id" name="icon" />
+  <item type="id" name="left_text" />
+  <item type="id" name="loading_data" />
+  <item type="id" name="main_layout" />
+  <item type="id" name="more" />
+  <item type="id" name="more_image" />
+  <item type="id" name="more_layout" />
+  <item type="id" name="more_text" />
+  <item type="id" name="notification_layout" />
+  <item type="id" name="right_text" />
+  <item type="id" name="template_widget_button" />
+  <item type="id" name="template_widget_content" />
+  <item type="id" name="template_widget_icon" />
+  <item type="id" name="template_widget_line" />
+  <item type="id" name="template_widget_text" />
+  <item type="id" name="template_widget_title" />
+  <item type="id" name="template_widget_title_date" />
+  <item type="id" name="widget_root" />
+</resources>

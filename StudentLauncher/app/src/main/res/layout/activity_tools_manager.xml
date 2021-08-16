@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/statusbar_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/font_18"
+        android:background="#ffffff" />
+
+    <ImageView
+        android:id="@+id/bt_back"
+        android:layout_below="@id/statusbar_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_activity_title_height"
+        android:paddingEnd="@dimen/padding_large"
+        android:paddingStart="@dimen/padding_large"
+        android:src="@drawable/edit_back" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@id/statusbar_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_activity_title_height"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="@string/usefull_tools"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/font_22" />
+
+    <LinearLayout
+        android:id="@+id/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/margin_26">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_30"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/t_touch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/touch"
+                android:textAlignment="center"
+                android:text="@string/touch"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"/>
+
+            <TextView
+                android:id="@+id/t_change_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_26"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/clock"
+                android:textAlignment="center"
+                android:text="@string/normal_clock"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"/>
+
+            <TextView
+                android:id="@+id/t_lock_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_26"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/lock_setting"
+                android:textAlignment="center"
+                android:text="@string/lock_setting"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"/>
+
+            <TextView
+                android:id="@+id/t_qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_26"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/two_code"
+                android:textAlignment="center"
+                android:text="@string/twodimension_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/margin_30"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/t_bettery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/save_mode"
+                android:textAlignment="center"
+                android:text="@string/save_mode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"/>
+
+            <TextView
+                android:id="@+id/t_silent_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_26"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/alarm"
+                android:textAlignment="center"
+                android:text="@string/nomal_mode"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"/>
+
+            <TextView
+                android:id="@+id/t_clean_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_26"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/clean_up"
+                android:textAlignment="center"
+                android:text="@string/clean_up"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"/>
+
+            <TextView
+                android:id="@+id/t_sos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_26"
+                android:drawablePadding="@dimen/padding"
+                android:drawableTop="@drawable/sos"
+                android:textAlignment="center"
+                android:text="@string/sos"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_20"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

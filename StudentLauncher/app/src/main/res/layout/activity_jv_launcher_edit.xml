@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_edit_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <View
+        android:id="@+id/statusbar_space"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/font_18"
+        android:background="#ffffff" />
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_activity_title_height"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/bt_edit_back"
+        android:layout_below="@id/statusbar_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_activity_title_height"
+        android:paddingEnd="@dimen/padding_large"
+        android:paddingStart="@dimen/padding_large"
+        android:src="@drawable/edit_back" />
+
+    <TextView
+        android:layout_below="@id/statusbar_space"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/edit_activity_title_height"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/user_desk_manger"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/bt_edit_back"
+        android:background="#686868" />
+
+    <TextView
+        android:id="@+id/tv_edit_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/wechat"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+    <com.android.xthink.ink.launcherink.ui.customview.InkNoScrollViewPager
+        android:id="@+id/view_pager_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_edit_item_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        app:isShortSlide="true"
+        app:isRecycle="true"
+        android:clipChildren="false" />
+
+    <com.android.xthink.ink.launcherink.ui.edit.indicator.HomeIndicator
+        android:id="@+id/home_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/page_manager_indicator_margin_bottom"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

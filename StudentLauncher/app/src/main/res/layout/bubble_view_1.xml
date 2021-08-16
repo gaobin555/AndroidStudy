@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="221dp"
+                android:layout_height="@dimen/bubble_1_width"
+                android:background="@drawable/todo_bubble"
+                android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/todo_image_test_color"/>
+
+    <TextView
+        android:id="@+id/tv_time_colon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bubble_1_time_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/bubble_1_time_margin_top"
+        android:text="@string/time_colon"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bubble_1_time_size"/>
+
+    <TextView
+        android:id="@+id/tv_time_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bubble_1_time_height"
+        android:layout_marginTop="@dimen/bubble_1_time_margin_top"
+        android:layout_toLeftOf="@id/tv_time_colon"
+        android:text="@string/number_test"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bubble_1_time_size"/>
+
+    <TextView
+        android:id="@+id/tv_time_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bubble_1_time_height"
+        android:layout_marginTop="@dimen/bubble_1_time_margin_top"
+        android:layout_toRightOf="@id/tv_time_colon"
+        android:text="@string/number_test"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bubble_1_time_size"/>
+
+    <TextView
+        android:id="@+id/tv_todo_title"
+        android:layout_width="@dimen/bubble_1_title_width"
+        android:layout_height="@dimen/bubble_1_title_height"
+        android:layout_below="@+id/tv_time_colon"
+        android:layout_centerHorizontal="true"
+        android:maxLines="3"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/bubble_1_title_size"/>
+    <RelativeLayout
+        android:id="@+id/rl_todo_bubble_choose"
+        android:background="@drawable/todo_chose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        >
+        <ImageView
+            android:id="@+id/iv_todo_yes"
+            android:background="@drawable/todo_yes"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/todo_yes"
+            android:layout_height="@dimen/todo_yes"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

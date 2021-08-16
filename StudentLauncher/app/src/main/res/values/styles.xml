@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="android:Theme.Light.NoTitleBar.Fullscreen"/>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="ActivityBlack" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">@color/primary</item>
+    </style>
+
+    <style name="update_dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--用户体系-->
+
+    <!--微信底部-->
+    <style name="WeChatBottomTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">@dimen/padding_x_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--微信底部-->
+    <style name="KindleBottomTv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:drawablePadding">@dimen/padding_x_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!--个人资料的item-->
+    <style name="PersonalCenterItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/item_height_middle</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--个人资料item的标题-->
+    <style name="PersonalCenterItemTitleTv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
+        <item name="android:textSize">@dimen/font_16</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <!--个人资料item的内容-->
+    <style name="PersonalCenterItemContentTv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:lines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/second</item>
+        <item name="android:paddingRight">@dimen/padding_large</item>
+    </style>
+
+    <!--开通畅读卡item-->
+
+    <style name="divider_horizontal_px">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/black_38</item>
+    </style>
+
+    <style name="divider_vertical_px">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+
+    </style>
+</resources>

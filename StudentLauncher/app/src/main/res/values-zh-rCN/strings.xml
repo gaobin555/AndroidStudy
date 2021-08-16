@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="number_test">01</string>
+
+    <string name="shake">摇一摇</string>
+    <string name="version_updating">版本更新</string>
+    <!--用户体系-->
+    <!--版本升级-->
+    <string name="error_storage_permission">"请打开存储权限，否则无法下载文件到SD卡"</string>
+    <string name="exit_edit">退出此次编辑？</string>
+
+    <!--用户中心-->
+    <!--today-->
+    <string name="shenzhen">深圳</string>
+    <string name="spit">小雨</string>
+    <string name="cumulative_badge">累计10h徽章</string>
+    <!--update-->
+    <string name="current_version">当前版本</string>
+    <string name="latest_version">已是最新版本</string>
+    <string name="new_version">新版本</string>
+    <string name="new_version_introduced">新版本功能介绍</string>
+    <string name="download">下载</string>
+    <string name="mobile_network">当前为移动网络，下载需消耗</string>
+    <string name="update_size">218MB</string>
+    <string name="flux_continue">使用流量，确定继续？</string>
+    <string name="continue_download">继续下载</string>
+    <string name="downloading_now">正在下载....</string>
+    <string name="install">安装</string>
+    <string name="update_now">正在安装，请稍候...</string>
+    <string name="is_lastest_verison">已下载新版本V</string>
+    <string name="install_experience">，快安装体验吧！</string>
+    <string name="download_background">程序后台下载，下载后请安装</string>
+    <string name="mozhi_version">XX\nv1.0.1</string>
+    <string name="update">更新</string>
+
+    <!--网络错误提示-->
+    <string name="no_network">请检查网络设置</string>
+    <string name="failed_load">网络异常，请稍后重试</string>
+    <string name="network_anomaly">加载失败，请稍后重试</string>
+    <string name="token_invalid">登录已过期，请重新登录</string>
+
+    <string name="updated_the_style_of_the_clock">更新了时钟的样式，重新调整了系统的代码逻辑，极大减少了闪退的概率\n\n将日程作为一个新的页面，可根据需要选择是否添加，给你更多自由空间</string>
+    <string name="update_date">2017年1月30日</string>
+    <string name="update_details">更新了时钟的样式，重新调整了系统的代码逻辑，极大减少了闪退的概率\n\n将日程作为一个新的页面，可根据需要选择是否添加，给你更多自由空间更新了时钟的样式，重新调整了系统的代码逻辑更新了时钟的样式，重新调整了系统的代码逻辑更新了时钟的样式，重新调整了系统的代码逻辑更新了时钟的样式，重新调整了系统的代码逻辑更新了时钟的样式，重新调整了系统的代码逻辑更新了时钟的样式，重新调整了系统的代码逻辑更新了时钟的样式，重新调整了系统的代码逻辑更新了时钟的样式，重新调整了系统的代码逻辑更新了时钟的样式，重新调整了系统的代码逻辑</string>
+    <string name="do_not_have_system_permissions">未获得系统权限，安装失败</string>
+    <string name="install_succeed">安装成功，请等待软件重启</string>
+    <string name="install_failed">安装失败，请稍后重试</string>
+    <string name="SDCardError">SD卡异常，无法下载到SD卡</string>
+
+    <!--error_pager-->
+    <string name="checking_version_info">正在检查版本信息…</string>
+
+    <string name="RMB">¥</string>
+    <string name="step_count">0</string>
+
+    <string name="v1_0_1">V1.0.1</string>
+    <string name="v1_02_15_6mb">V1.02 15.6MB</string>
+    <string name="test_99">99</string>
+    <string name="fine">晴</string>
+    <string name="cloudy">多云</string>
+    <string name="overcast">阴</string>
+    <string name="sandstorm">沙尘暴</string>
+    <string name="fog">雾</string>
+    <string name="haze">雾霾</string>
+    <string name="thunder_shower">雷阵雨</string>
+    <string name="moderate_rain">中雨</string>
+    <string name="sleet">雨夹雪</string>
+    <string name="snowstorm">暴雪</string>
+    <string name="heavy_snow">大雪</string>
+    <string name="moderate_snow">中雪</string>
+    <string name="light_snow">小雪</string>
+    <string name="heavy_rain">大雨</string>
+    <string name="light_rain">小雨</string>
+    <string name="rainstorm">暴雨</string>
+    <!--开机引导-->
+    <string name="choose_reader">请勾选喜欢的内容</string>
+
+
+    <string name="hint">在最后一屏点击“桌面管理”\n可查看更多精彩内容</string>
+
+    <string name="btn_access">允许</string>
+    <string name="btn_deny">取消</string>
+    <string name="network_access_description">XX屏集成了同花顺、商业周刊、界面新闻、XX、微信、今天、日程、QQ阅读、掌阅阅读、咪咕阅读，使用过程中，需要获取读取短信、读取彩信、拍照与录像、录音、开关移动网络、开关WLAN、开关蓝牙、获取地理位置、读取联系人、新建/修改联系人、删除联系人、读取日程、写入日程、读取外部存储，写入外部存储权限，是否允许？</string>
+    <string name="do_not_ask_again">不再询问</string>
+    <string name="no_longer_tips">不再提示</string>
+
+
+    <!--开机向导-->
+
+    <string name="permission_wechat">微信申请以下权限：\n\n 访问互联网，将产生流量、开关WLAN、获取地理位置、读取联系人、新建/修改联系人、删除联系人、录音、读取短信、拍照与录像、录音、开关WLAN、开关蓝牙、获取地理位置</string>
+    <string name="permission_jiemian_news">界面新闻申请以下权限：\n\n访问互联网，将产生流量、开关WLAN、获取地理位置</string>
+    <string name="permission_qq_reader">QQ阅读申请以下权限：\n\n访问互联网，将产生流量、拍照与录像、录音、开关移动网络、获取地理位置、开关WLAN、开关蓝牙</string>
+    <string name="permission_ir_reader">掌阅阅读申请以下权限：\n\n访问互联网，将产生流量、开关移动网络、开关WLAN、发送短信、发送彩信、读取短信、读取彩信、拍照与录像、录音</string>
+    <string name="permission_tonghuashun">同花顺申请以下权限：\n\n访问互联网，将产生流量、拍照与录像、录音、开关移动网络、开关WLAN、开关蓝牙、获取地理位置</string>
+    <string name="permission_news_syzk">商业周刊申请以下权限：\n\n访问互联网，将产生流量、开关WLAN、获取地理位置</string>
+    <string name="permission_reader_migu">咪咕阅读申请以下权限：\n\n访问互联网，将产生流量、读取联系人、发送短信、发送彩信、读取短信、读取彩信、拍照与录像、录音、开关移动网络、开关WLAN、获取地理位置</string>
+
+    <!--*******************************分割线**************************************************************-->
+
+    <string name="app_name">桌面</string>
+
+    <!--common-->
+    <string name="btn_ok">确定</string>
+    <string name="btn_cancel">取消</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="time_colon">:</string>
+    <string name="click_retry">重试</string>
+    <string name="no_data">暂无数据…</string>
+    <string name="base_loading">加载中…</string>
+    <string name="permission_mozhi">为提供基本服务,XX屏使用过程中,需要获取联网、地理位置、读取短信、读写日程,是否允许？</string>
+
+    <!--Wechat-->
+    <string name="wechat">微信</string>
+    <string name="wechat_title">微信</string>
+    <string name="wechat_friend">朋友圈</string>
+    <string name="wechat_subscribe">订阅号</string>
+    <string name="wechat_collection">收藏</string>
+
+    <!--kindle-->
+    <string name="kindle_home">主页</string>
+    <string name="kindle_store">商店</string>
+    <string name="kindle_reading">阅读</string>
+
+    <!--微信通知监听服务-->
+    <string name="we_chat_service">WeChatNotificationListenerService</string>
+
+    <!--设置界面-->
+    <string name="user_desk_manger">桌面管理</string>
+    <string name="user_setting">应用设置</string>
+    <string name="notification_manager">通知管理</string>
+    <string name="setting">设置</string>
+    <string name="pure_lock_screen">Today锁屏</string>
+    <string name="pure_lock_screen_des">启用后锁屏显示时间、天气和步数</string>
+    <string name="lock_screen_notification">锁屏通知</string>
+    <string name="wechat_mail_message_setting">微信、信息</string>
+    <string name="lock_screen_encrypt">锁屏加密</string>
+    <string name="lock_screen_encrypt_des">开启后将同步系统锁屏密码设置</string>
+    <string name="prep_picture">请在彩色屏的图库中预设一张图片</string>
+    <string name="select_photo">彩色屏的图库选择一张图片,设为XX摇一摇</string>
+    <string name="unlock_after_shake_out_weChat_card">解锁后10秒内摇一摇调出预设图片,\n如微信名片</string>
+    <string name="tips_tap_to_wake">双击屏幕即可唤醒设备</string>
+    <string name="title_tap_to_wake">双击唤醒</string>
+    <string name="des_kids_mode">启用后不可使用彩色屏，保留上网\n和来电接听功能</string>
+    <string name="title_kids_mode">儿童模式</string>
+    <string name="setting_wallpaper_push">锁屏推送</string>
+    <string name="setting_wallpaper_push_desc">精彩内容每日推送</string>
+    <string name="kis_cannot_open">请先长按电源键退出纯阅读模式</string>
+    <string name="kis_mode_hit_diglog"> 启用儿童模式后，将关闭彩色屏，但保留上网和来电接听功能。</string>
+    <string name="known">知道了</string>
+    <string name="screen_clock_locker">锁屏时钟</string>
+    <string name="screen_clock_locker_desc">关闭后锁屏不显示时钟，更省电</string>
+
+    <!--desktop title-->
+    <string name="today">今天</string>
+    <string name="todo">日程</string>
+    <string name="moBest">XX推荐</string>
+    <string name="tonghuashun">同花顺</string>
+    <string name="shangzhou">商业周刊</string>
+    <string name="jingdong">京东阅读</string>
+    <string name="jiemian">界面新闻</string>
+    <string name="qqreader">QQ阅读</string>
+    <string name="ireader">掌阅阅读</string>
+    <string name="migu">咪咕阅读</string>
+    <string name="kindle">kindle</string>
+    <string name="moai">知识AI</string>
+    <string name="music">音乐</string>
+    <string name="curriculum">课程表</string>
+
+    <string name="home_screen">主屏</string>
+    <string name="set_home_screen">设为主屏</string>
+
+    <!--TODO-->
+    <string name="remind_permission">无法读取日程</string>
+    <!--个人中心-->
+    <string name="user_need_login">未登录</string>
+    <string name="user_null">未设置</string>
+    <string name="rookie">新秀</string>
+    <string name="silver">白银</string>
+    <string name="gold">黄金</string>
+    <string name="platinum">铂金</string>
+    <string name="diamond">钻石</string>
+    <string name="complete_the_information">资料已完善， 成长值增加20</string>
+    <string name="curren_score">当前成长值：</string>
+    <!--todo-->
+    <string name="user_menu_title">个人中心</string>
+    <string name="mocard">我的VIP</string>
+    <string name="my_interests">我的权益</string>
+    <string name="user_account_cash_left">我的钱包</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about_mobest">关于XX</string>
+    <string name="log_out">退出登录</string>
+    <string name="save_success">保存成功</string>
+    <string name="exit_success">退出登录</string>
+    <string name="exit_ok_or_not">确定退出登录吗？</string>
+    <!--todo-->
+    <string name="complete_information">完善资料送20成长值</string>
+    <string name="page">张</string>
+    <string name="trunk">枚</string>
+    <!--todo-->
+    <!--个人资料-->
+    <string name="nickname_no_empty">昵称不能为空</string>
+    <string name="save_preparing">正在保存•••</string>
+    <string name="user_personal_title">个人资料</string>
+    <string name="user_personal_head">头像</string>
+    <string name="user_personal_nickname">昵称</string>
+    <string name="user_personal_sex">性别</string>
+    <string name="user_personal_birth">出生年月</string>
+    <string name="user_personal_work">职业</string>
+    <string name="user_personal_area">地区</string>
+    <string name="user_personal_reading_hobby">阅读喜好</string>
+    <string name="user_format_birthday">yyyy年MM月</string>
+
+    <string name="user_sex_male">男</string>
+    <string name="user_sex_female">女</string>
+    <string name="the_internet">互联网</string>
+    <string name="occupations_finance">金融</string>
+    <string name="occupations_medical">医药医疗</string>
+    <string name="occupations_estate">建筑地产</string>
+    <string name="occupations_education">教育</string>
+    <string name="occupations_maker">制造业</string>
+    <string name="occupations_media">传媒</string>
+    <string name="occupations_government">政府机关</string>
+    <string name="occupations_it">IT</string>
+
+    <string name="reading_hobby_reading">看小说</string>
+    <string name="reading_hobby_art">文艺范</string>
+    <string name="reading_hobby_positive_energy">正能量</string>
+    <string name="reading_hobby_talk_culture">谈文化</string>
+    <!-- 互联网用 the_internet-->
+    <string name="reading_hobby_social_sciences">大社科</string>
+    <string name="reading_hobby_army">军体迷</string>
+    <string name="reading_hobby_game">游戏类</string>
+    <string name="reading_hobby_reading_heart">读心术</string>
+    <string name="reading_hobby_science">科学控</string>
+    <string name="reading_hobby_profession">拼专业</string>
+    <string name="reading_hobby_reading_history">读政史</string>
+    <string name="reading_hobby_learn_finance">学经管</string>
+    <string name="reading_hobby_love_live">爱生活</string>
+    <string name="reading_hobby_character_records">人物志</string>
+    <string name="reading_hobby_chose_magazine">选杂志</string>
+    <string name="reading_hobby_foreign">外文界</string>
+    <string name="reading_hobby_learn">教辅栏</string>
+    <!--用户体系关于mozhi-->
+    <string name="weibo_mozhi">微博: @XX</string>
+    <string name="customer_service_hotline">客服热线: 4000388666</string>
+    <string name="wechat_mozhi">微信公众号: YOTAXX</string>
+    <string name="service_agreement">服务协议</string>
+    <string name="privacy_statement">隐私保护声明</string>
+    <string name="user_guide">用户指南</string>
+    <string name="user_about_mozhi">关于XX</string>
+    <!--我的权益-->
+    <string name="my_rights">我的权益</string>
+    <string name="failed_coupon">已失效的券</string>
+    <string name="read_coupons">阅读优惠券</string>
+    <string name="deadline">截止日期：2017.6.8</string>
+    <string name="deadline2">截止日期： </string>
+    <string name="no_rights">暂无权益</string>
+    <string name="workableness">可使用</string>
+    <string name="day">日</string>
+    <string name="class_privilege">等级特权</string>
+    <string name="offline_reading_group">参加线下\n读书会</string>
+    <string name="Buyers_can_knock">购机\n立减88元</string>
+    <string name="New_books_recommend">新书推荐\n优先试读</string>
+    <string name="Buy_books_at_8_discount">购书享\n8折优惠</string>
+    <string name="upgrade_score_before">升级还需</string>
+    <string name="score"> 成长值</string>
+    <string name="more_rights">超多奖励、更多权益等你拿哦！</string>
+    <string name="reading_vouchers_use_rules">读书券使用规则</string>
+    <string name="readind_rules_content">1、使用范围：\n\nXX推荐所有图书。\n\n2、使用规则：\n\n当需要支付的金额小于书券面值时会自动显示\n\n出来，可用于支付。\n\n3、读书券只限一次使用完毕。</string>
+    <string name="reading_rules_content_title">读书券使用规则</string>
+    <!--我的徽章-->
+    <string name="medal_wall">我的徽章</string>
+    <string name="no_activities">暂无活动</string>
+    <string name="cumulative_duration">累计时长</string>
+    <string name="read_book">阅读书籍</string>
+    <string name="continuous_learning">连续学习</string>
+    <string name="activity_badge">活动徽章</string>
+    <string name="total_time_3">累计3小时</string>
+    <string name="total_time_7">累计7小时</string>
+    <string name="total_time_15">累计15小时</string>
+    <string name="total_time_30">累计30小时</string>
+    <string name="total_time_50">累计50小时</string>
+    <string name="total_time_100">累计100小时</string>
+    <string name="total_time_200">累计200小时</string>
+    <string name="total_time_500">累计500小时</string>
+    <string name="total_time_1000">累计1000小时</string>
+
+    <string name="total_books_3">阅读 3 本</string>
+    <string name="total_books_10">阅读 10 本</string>
+    <string name="total_books_30">阅读 30 本</string>
+    <string name="total_books_50">阅读 50 本</string>
+    <string name="total_books_100">阅读 100 本</string>
+    <string name="total_books_200">阅读 200 本</string>
+    <string name="total_books_500">阅读 500 本</string>
+    <string name="total_books_1000">阅读 1000 本</string>
+    <string name="total_books_2000">阅读 2000 本</string>
+
+    <string name="total_day_3">连续 3 天</string>
+    <string name="total_day_10">连续 10 天</string>
+    <string name="total_day_30">连续 30 天</string>
+    <string name="total_day_50">连续 50 天</string>
+    <string name="total_day_100">连续 100 天</string>
+    <string name="total_day_200">连续 200 天</string>
+    <string name="total_day_365">连续 365 天</string>
+    <string name="total_day_500">连续 500 天</string>
+    <string name="total_day_1000">连续 1000 天</string>
+    <!--用户指南-->
+    <string name="user_explain">用户指南</string>
+    <string name="account_question">账户问题</string>
+    <string name="reader_set">XX推荐阅读管理</string>
+    <string name="bookmark_note">书签/笔记/目录</string>
+    <string name="book_source">书籍来源管理</string>
+    <string name="level_server">等级服务</string>
+    <string name="read_card">VIP相关</string>
+    <string name="other">其它相关</string>
+    <!--意见反馈-->
+    <string name="user_suggestion">意见反馈</string>
+
+    <!--购买畅读卡-->
+    <string name="user_buy_card">开通VIP</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_fail">支付未完成</string>
+    <string name="validity_date_to">有效期至:</string>
+    <string name="buy_way">支付方式</string>
+    <string name="card_description">特权说明： 20万本VIP图书免费借阅</string>
+    <string name="total_value_des">共计 ¥</string>
+    <string name="to_pay">去支付</string>
+    <string name="To_top_up">去充值</string>
+    <string name="we_chat_pay">微信支付</string>
+    <string name="ali_pay">支付宝支付</string>
+    <string name="balance_pay">XX余额支付</string>
+    <string name="payment_amount">共计 ¥</string>
+    <string name="pay_confirming">确认支付结果•••</string>
+    <string name="pay_preparing">支付准备中•••</string>
+    <string name="please_login">请登录</string>
+    <string name="point">.</string>
+
+    <!--直通app-->
+    <string name="direct_discover">应用列表</string>
+    <string name="direct_app">推荐应用</string>
+    <string name="mozhi_app">XX应用</string>
+    <string name="direct_more">更多</string>
+    <string name="direct_no_app">请先安装该应用</string>
+    <string name="direct_feedback_tip">没有您想用的APP？</string>
+    <string name="direct_feedback_btn">告诉我们</string>
+    <string name="direct_feedback_input_hint">请输入想使用的APP名称</string>
+    <string name="direct_feedback_submit">提交</string>
+    <string name="direct_feedback_received">已收到反馈</string>
+    <string name="direct_option_tip">直通应用经过深度优化，清晰护眼。</string>
+    <string name="install_in_color_screen">请先安装该应用</string>
+    <string name="Apps_can_not_be_added">
+         最多可添加<xliff:g id="YEAR">%1$s</xliff:g>个到桌面
+    </string>
+    <string name="direct_freeze_tip">为冻结应用，再次点击解冻并打开应用。</string>
+
+    <string name="phone">联系人</string>
+    <string name="message">微聊</string>
+    <string name="email">浏览器</string>
+    <string name="notice">通知</string>
+    <string name="empty_notic">没有通知.</string>
+
+    <string name="net_error">"获取天气信息失败,请检查网络设置！"</string>
+    <string name="no_music">暂无音频</string>
+    <string name="no_audio">暂无详情介绍</string>
+    <string name="music_list">音乐列表</string>
+    <string name="no_local_music">本地没有音乐</string>
+    <string name="usefull_tools">快捷菜单</string>
+
+    <string name="touch">手电筒</string>
+    <string name="save_mode">省电模式</string>
+    <string name="change_clock">切换时钟</string>
+    <string name="normal_clock">经典时钟</string>
+    <string name="zodiac_clock">生肖时钟</string>
+    <string name="silent_mode">震动模式</string>
+    <string name="nomal_mode">响铃模式</string>
+    <string name="lock_setting">锁屏加密</string>
+    <string name="clean_up">清理加速</string>
+    <string name="twodimension_code">二维码</string>
+    <string name="sos">SOS</string>
+
+    <string name="no_curriculum_1">还没添加课程表</string>
+    <string name="no_curriculum_2">请在 掌上智典APP-更多-课程表 添加</string>
+    <string name="no_sdcard_1">还没添加学生信息</string>
+    <string name="no_sdcard_2">请在掌上智典APP上点击宝贝头像后编辑学生信息</string>
+    <string name="no_app_1">还没有添加学习软件</string>
+    <string name="no_app_2">请在 掌上智典APP-更多-应用商店 添加</string>
+
+    <string name="torch_low_battery_warning">电量低于15%，无法使用手电筒！</string>
+
+    <string name="show_qrcode">显示二维码</string>
+    <string name="qrcode_notice">"  在掌上智典APP-添加手机，\n扫描二维码后即可绑定本设备"</string>
+    <string name="qrcode_title">学生端二维码</string>
+    <string name="clean_up_text">清理完成!</string>
+
+    <string name="unknown">未知</string>
+    <string name="text_school">学校:</string>
+    <string name="text_class">班级：</string>
+    <string name="text_addr">地址：</string>
+    <string name="app_store">应用商店</string>
+
+    <string name="alert_message_report_loss">手机处于挂失状态\n请尽快归还失主</string>
+    <string name="alert_message_reserver_power">进入预留电量\n只能接听电话\n拨打SOS号码</string>
+    <string name="alert_message_class_forbidden">进入上课禁用\n只能接听电话\n拨打SOS号码</string>
+
+    <!-- String for CTA -->
+    <string name="notification_tittle">申明和条款</string>
+    <string name="notification_message">您将使用手机，在使用过程中需要使用联网操作和位置信息，您是否同意?</string>
+</resources>
+
+

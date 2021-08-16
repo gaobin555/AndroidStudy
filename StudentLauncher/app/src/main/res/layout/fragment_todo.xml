@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:calendarview="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/todo_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/last_month"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="100dp"
+            android:background="@drawable/last"/>
+
+        <TextView
+            android:id="@+id/date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/next_month"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/next"/>
+
+    </RelativeLayout>
+
+    <com.othershe.calendarview.weiget.WeekView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="35dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="13dp"
+        android:layout_height="5dp"
+        android:background="@drawable/dividing_line"
+        android:layerType="software"/>
+
+    <com.othershe.calendarview.weiget.CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="800dp"
+        calendarview:choose_type="single"
+        calendarview:show_holiday="true"
+        calendarview:show_lunar="true"
+        calendarview:show_term="true"
+        calendarview:solar_size="14"
+        calendarview:lunar_size="10"
+        calendarview:switch_choose="false"
+        calendarview:day_bg="@drawable/choose"/>
+
+</LinearLayout>
+

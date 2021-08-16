@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/activity_desktopmanager"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/comm_title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.android.xthink.ink.launcherink.common.view.SettingView
+                android:id="@+id/sv_pure_lock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:des="@string/pure_lock_screen_des"
+                app:open="false"
+                app:title="@string/pure_lock_screen"/>
+
+            <com.android.xthink.ink.launcherink.common.view.SettingView
+                android:id="@+id/sv_wallpaper_push"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:des="@string/setting_wallpaper_push_desc"
+                app:open="true"
+                app:title="@string/setting_wallpaper_push"/>
+
+            <com.android.xthink.ink.launcherink.common.view.SettingView
+                android:id="@+id/sv_lock_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:des="@string/wechat_mail_message_setting"
+                app:open="true"
+                app:title="@string/lock_screen_notification"/>
+
+            <com.android.xthink.ink.launcherink.common.view.SettingView
+                android:id="@+id/sv_lock_clock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:des="@string/screen_clock_locker_desc"
+                app:open="false"
+                app:title="@string/screen_clock_locker"/>
+
+            <com.android.xthink.ink.launcherink.common.view.SettingView
+                android:id="@+id/sv_lock_encrypt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:des="@string/lock_screen_encrypt_des"
+                app:open="false"
+                app:title="@string/lock_screen_encrypt"/>
+
+            <com.android.xthink.ink.launcherink.common.view.SettingView
+                android:id="@+id/sv_shake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:des="@string/unlock_after_shake_out_weChat_card"
+                app:open="false"
+                app:title="@string/shake"/>
+
+            <com.android.xthink.ink.launcherink.common.view.SettingView
+                android:id="@+id/sv_tap_to_wake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:des="@string/tips_tap_to_wake"
+                app:open="false"
+                app:title="@string/title_tap_to_wake"/>
+
+            <com.android.xthink.ink.launcherink.common.view.SettingView
+                android:id="@+id/sv_kids_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:des="@string/des_kids_mode"
+                app:open="false"
+                app:title="@string/title_kids_mode"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_setting_title"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/white_98"
+                android:visibility="gone"/>
+
+            <com.android.xthink.ink.launcherink.common.view.SettingView
+                android:id="@+id/setting_update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:des="v1.01"
+                app:isUpdate="true"
+                app:title="@string/version_updating"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd')
+    return formattedDate
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        applicationId "com.thinkrace.watchservice"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //必须要保证所有的flavor 都属于同一个维度
+        flavorDimensions "default"
+    }
+
+    buildTypes {
+        debug {
+            debuggable true //表示是否可以在手机上调试程序。
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+        }
+        release {
+            debuggable true
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            def projectName = 'WatchService';
+            String buildTypeName = variant.buildType.name;
+            def apkName;
+            if (buildTypeName.equals('release')) {
+                apkName = projectName + '.apk'
+            } else if (buildTypeName.equals('debug')) {
+                apkName = projectName + defaultConfig.versionName +'_debug' + "_" + getDate() + '.apk'
+            }
+            outputFileName = apkName;
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation project(':socket')
+    implementation project(':common-interface')
+//    compile 'com.tonystark.android:socket:3.1.0'
+    implementation rootProject.ext.dependencies["support-v7"]
+//    implementation 'com.amap.api:location:4.0.1'//高德定位最新版
+    implementation rootProject.ext.dependencies["adapter-rxjava"]
+    implementation rootProject.ext.dependencies["rxbinding"]
+    implementation rootProject.ext.dependencies["rxpermissions"]
+    implementation 'org.jetbrains:annotations-java5:15.0'
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/WatchService.iml" filepath="$PROJECT_DIR$/WatchService.iml" group="WatchService" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="WatchService/app" />
+      <module fileurl="file://$PROJECT_DIR$/common-interface/common-interface.iml" filepath="$PROJECT_DIR$/common-interface/common-interface.iml" group="WatchService/common-interface" />
+      <module fileurl="file://$PROJECT_DIR$/socket/socket.iml" filepath="$PROJECT_DIR$/socket/socket.iml" group="WatchService/socket" />
+    </modules>
+  </component>
+</project>

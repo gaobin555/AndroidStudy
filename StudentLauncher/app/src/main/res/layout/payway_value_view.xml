@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="155dp"
+                android:layout_height="80dp"
+                android:gravity="center">
+
+    <ImageView
+        android:id="@+id/iv_payway_value"
+        android:layout_width="155dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_cb_payway_un"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_payway_value_fir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            tools:text="121"
+            android:textSize="@dimen/font_20"/>
+
+        <TextView
+            android:id="@+id/tv_payway_value_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_payway_value_fir"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/white_68"
+            android:textSize="@dimen/font_14"
+            tools:text="121"/>
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_pay_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/pay_item_select"
+        android:gravity="center"
+        android:visibility="gone"/>
+</RelativeLayout>

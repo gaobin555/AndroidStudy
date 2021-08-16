@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="android.uid.system"
+    package="com.android.xthink.ink.launcherink">
+
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- <uses-permission android:name="android.permission.READ_CALENDAR" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_CALENDAR" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" /> <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <!-- &lt;!&ndash; 用于访问GPS定位 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- &lt;!&ndash; 用于访问wifi网络信息，wifi信息会用于进行网络定位 &ndash;&gt; -->
+    <!-- &lt;!&ndash; 用于申请调用A-GPS模块 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> -->
+    <!-- &lt;!&ndash; 用于申请获取蓝牙信息进行室内定位 &ndash;&gt; -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH" /> -->
+    <!-- <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> -->
+    <!-- 用户体系 -->
+    <!-- 需要短信验证 -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_SMS"/> -->
+    <!-- <uses-permission android:name="android.permission.SEND_SMS"/> -->
+    <!-- 读写外部存储区上缓存的文件和数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- 系统设置操作权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" /> <!-- kindle -->
+    <uses-permission android:name="com.amazon.STORE_ACCESS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PRECISE_PHONE_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_home"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".service.SosCallService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".ui.toolsmanager.QrCodeActivity" />
+        <activity android:name=".ui.home.music.MusicListActivity" />
+        <activity
+            android:name=".ui.home.MainActivity"
+            android:configChanges="screenSize|orientation|keyboard|navigation|layoutDirection|mcc|mnc"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="com.yotadevices.intent.category.EPD_HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.yotadevices.keep_on_epd_screen"
+                android:value="true" />
+        </activity>
+        <activity android:name=".ui.edit.EditActivity">
+            <meta-data
+                android:name="com.yotadevices.keep_on_epd_screen"
+                android:value="true" />
+        </activity>
+        <activity android:name=".ui.settingmanager.SettingManagerActivity">
+            <meta-data
+                android:name="com.yotadevices.keep_on_epd_screen"
+                android:value="true" />
+        </activity>
+        <activity
+            android:name=".ui.direct.DirectActivity"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data
+                android:name="com.yotadevices.keep_on_epd_screen"
+                android:value="true" />
+        </activity>
+
+        <service
+            android:name=".service.AccessibilityService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/wechat_serviceconfig" />
+        </service>
+        <service
+            android:name=".ui.home.multitask.service.MultitaskService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.jv.ink.nultitask.aidl" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+
+        <provider
+            android:name=".ui.settingmanager.SettingProvider"
+            android:authorities="${AUTHORITY}"
+            android:exported="true" /> <!-- 注册监听动态开关 -->
+
+        <service
+            android:name=".ui.notificationManager.NotificationMonitor"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ui.toolsmanager.ToolsManagerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="xthink.intent.action.TOOLS_MANAGER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.notificationManager.NotificationManagerActivity" />
+
+        <service
+            android:name=".service.AutoUpdateService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".receiver.UpdateReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".receiver.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.ParentalControlReceiver">
+            <intent-filter>
+                <action android:name="com.android.hotpeper.REPORT_LOSS" />
+                <action android:name="com.android.hotpeper.RESERVE_POWER" />
+                <action android:name="com.android.hotpeper.ACTION_CLASS_FORBIDDEN" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
